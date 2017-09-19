@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HEC-kE-ai6">
+            <objects>
+                <viewController storyboardIdentifier="mainStoryboard" id="rYi-Gy-w2U" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AMv-lb-oLM"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZVe-LK-EEC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vWK-2d-e9W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotels_background" translatesAutoresizingMaskIntoConstraints="NO" id="0ml-rn-FiB">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZVe-LK-EEC" firstAttribute="top" secondItem="0ml-rn-FiB" secondAttribute="bottom" id="Ewk-RG-IUA"/>
+                            <constraint firstItem="0ml-rn-FiB" firstAttribute="top" secondItem="AMv-lb-oLM" secondAttribute="bottom" id="b4l-bj-Lzq"/>
+                            <constraint firstItem="0ml-rn-FiB" firstAttribute="leading" secondItem="vWK-2d-e9W" secondAttribute="leadingMargin" id="fMd-ys-GJy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0ml-rn-FiB" secondAttribute="trailing" id="nho-X4-JPv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="blT-hm-mJ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85e-eT-lhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-703" y="137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ınfoStoryboard" id="BYZ-38-t0r" customClass="ViewController" customModule="Hotel_IOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_menu_background" id="3co-Os-j3A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hotels_background" width="1080" height="1920"/>
+        <image name="main_menu_background" width="1080" height="1920"/>
+    </resources>
+</document>
